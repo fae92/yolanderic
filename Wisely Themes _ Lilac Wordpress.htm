@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://www.wiselythemes.com/index.php?theme=lilac_wp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Page Title -->
+	<title>Wisely Themes | Lilac Wordpress</title>
+	
+	<!-- Meta Tags -->
+	
+	<meta name="keywords" content="wisely themes, html5, ui, premium templates, premium themes, themeforest, creative market">
+	<meta name="description" content="We&#39;re a highly-skilled team with a vast experience creating functional and creative web solutions for a quick and affordable way to build websites">
+	<meta name="author" content="Wisely Themes">
+	
+	<!-- Mobile Meta Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Google Web Font -->
+	<link href="./Wisely Themes _ Lilac Wordpress_files/css" rel="stylesheet" type="text/css">
+	
+	<link href="./Wisely Themes _ Lilac Wordpress_files/font-awesome.min.css" rel="stylesheet">
+	<link href="./Wisely Themes _ Lilac Wordpress_files/frame.css" rel="stylesheet" type="text/css">
+	
+	<!-- IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+	<![endif]-->
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="http://www.wiselythemes.com/assets/images/favicons/favicon.jpg">
+	<link rel="apple-touch-icon" href="http://www.wiselythemes.com/assets/images/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://www.wiselythemes.com/assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://www.wiselythemes.com/assets/images/favicons/apple-touch-icon-114x114.png">
+	
+	<!-- Modernizr -->
+	
+	<script type="text/javascript" src="./Wisely Themes _ Lilac Wordpress_files/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.9.1.min.js"><\/script>')</script>
+	
+	<script type="text/javascript">
+        
+        var theme_list_open = false;
+        
+        $(document).ready(function () {
+        
+        	function fixHeight () {
+				if ($("#frame").css("display") == "block") {
+					$("#iframe_wrap, #iframe").height($(window).height() - $("#frame").height())
+				} else {
+					$("#iframe_wrap, #iframe").height($(window).height())
+				}
+        	}
+        	
+        	$(window).resize(function () {
+				fixHeight();
+        	}).resize();
+        	
+        	$("#theme_select").click( function () {
+        		if (theme_list_open == true) {
+					$("#theme_list ul").hide();
+					$("#theme_select").removeClass("active");
+					theme_list_open = false;
+        		} else {
+					$("#theme_list ul").show();
+					$("#theme_select").addClass("active");
+					theme_list_open = true;
+        		}
+        		
+        		return false;
+        	});
+        	
+        	$("#theme_list ul li a").click(function () {
+        	
+				var theme_data = $(this).attr("rel").split(",");
+							
+				$("div.purchase a").attr("href", theme_data[1]);
+				$("div.purchase a span").html(theme_data[2]);
+				$("div.remove_frame a").attr("href", theme_data[0]);
+				$("#iframe").attr("src", theme_data[0]);
+				
+				$("#theme_list a#theme_select").text($(this).text());
+				
+				$("#theme_list ul").hide();
+				$("#theme_select").removeClass("active");
+				
+				theme_list_open = false;
+				
+				return false;
+        	
+        	});
+			
+			$("#resize_devices li, .remove_frame ").hover(
+				function () {
+					var $tooltip = $(this).find(".tooltip");
+					$tooltip.show();
+					if ( !$tooltip.hasClass("right") ){
+						$tooltip.css({ marginRight: - ($tooltip.width() / 2) - 2 + 'px'});
+					}
+				},
+				function() {
+					var $tooltip = $(this).find(".tooltip");
+					$tooltip.hide();
+				}
+			);
+			
+			$("#resize_devices li").click(function(){
+				$("#resize_devices li").removeClass("active");
+				$(this).addClass("active");
+				$("#iframe_wrap, #iframe").removeClass();
+				$("#iframe_wrap, #iframe").addClass($(this).data("size"));
+				$("#iframe").attr("src", theme_data[0]);
+			});
+        });
+        
+	</script>
+         
+</head>
+
+<body>
+
+	<div id="frame">
+		<a href="http://www.wiselythemes.com/index.html" id="logo_frame"><img src="./Wisely Themes _ Lilac Wordpress_files/logo.png" alt="WiselyThemes"></a>
+		<div id="theme_list">
+			<a id="theme_select" href="http://www.wiselythemes.com/index.php?theme=lilac_wp#" class="">Lilac</a>
+		
+			<ul style="display: none;">
+				<li><a href="http://www.wiselythemes.com/index.php?theme=lilac_wp#" rel="http://www.wiselythemes.com/wordpress/lilac,https://themeforest.net/item/lilac-onepage-wedding-wordpress-theme/13938436?ref=WiselyThemes,$49">Lilac Wordpress<img src="./Wisely Themes _ Lilac Wordpress_files/wordpress.png" alt=""></a></li><li><a href="http://www.wiselythemes.com/index.php?theme=lilac_wp#" rel="http://www.wiselythemes.com/html/lilac,http://themeforest.net/item/lilac-responsive-onepage-html5-wedding-template/11877936?ref=WiselyThemes,$15">Lilac<img src="./Wisely Themes _ Lilac Wordpress_files/html5css3.png" alt=""></a></li><li><a href="http://www.wiselythemes.com/index.php?theme=lilac_wp#" rel="http://www.wiselythemes.com/html/cozy,http://themeforest.net/item/cozy-responsive-real-estate-html-template/8504911?ref=WiselyThemes,$17">Cozy<img src="./Wisely Themes _ Lilac Wordpress_files/html5css3.png" alt=""></a></li><li><a href="http://www.wiselythemes.com/index.php?theme=lilac_wp#" rel="http://www.wiselythemes.com/joomla/beat,http://themeforest.net/item/beat-one-page-music-band-joomla-template/7723157?ref=WiselyThemes,$48">Beat Joomla<img src="./Wisely Themes _ Lilac Wordpress_files/joomla.png" alt=""></a></li><li><a href="http://www.wiselythemes.com/index.php?theme=lilac_wp#" rel="http://www.wiselythemes.com/joomla/wt_mochito,http://themeforest.net/item/mochito-one-page-portfolio-joomla-template/6333937?ref=WiselyThemes,$48">Mochito Joomla<img src="./Wisely Themes _ Lilac Wordpress_files/joomla.png" alt=""></a></li><li><a href="http://www.wiselythemes.com/index.php?theme=lilac_wp#" rel="http://www.wiselythemes.com/beat,http://themeforest.net/item/beat-onepage-html5-music-band-template/5825021?ref=WiselyThemes,$15">Beat<img src="./Wisely Themes _ Lilac Wordpress_files/html5css3.png" alt=""></a></li><li><a href="http://www.wiselythemes.com/index.php?theme=lilac_wp#" rel="http://www.wiselythemes.com/mochito,http://themeforest.net/item/mochito-responsive-onepage-portfolio-template/5397997?ref=WiselyThemes,$15">Mochito<img src="./Wisely Themes _ Lilac Wordpress_files/html5css3.png" alt=""></a></li>			</ul>
+		</div>
+		
+		<ul id="resize_devices">
+			<li class="active" data-size="desktop">
+				<span class="fa fa-desktop"></span>
+				<div class="tooltip" style="display: none; margin-right: -24px;">Desktop</div>
+			</li>
+			<li data-size="tablet_landscape" class="">
+				<span class="fa fa-tablet fa-rotate-270"></span>
+				<div class="tooltip" style="display: none; margin-right: -75px;">Tablet landscape(1024x768)</div>
+			</li>
+			<li data-size="tablet_portrait" class="">
+				<span class="fa fa-tablet"></span>
+				<div class="tooltip" style="display: none; margin-right: -69px;">Tablet portrait(768x1024)</div>
+			</li>
+			<li data-size="mobile_portrait" class="">
+				<span class="fa fa-mobile"></span>
+				<div class="tooltip" style="display: none; margin-right: -68px;">Mobile portrait(480x800)</div>
+			</li>
+		</ul>
+		
+		<div class="remove_frame" rel="http://www.wiselythemes.com/wordpress/lilac"><a href="http://www.wiselythemes.com/html/lilac">&nbsp;</a><div class="tooltip right">Remove Frame</div></div>		
+		<div class="purchase" rel="https://themeforest.net/item/lilac-onepage-wedding-wordpress-theme/13938436?ref=WiselyThemes"><a href="http://themeforest.net/item/lilac-responsive-onepage-html5-wedding-template/11877936?ref=WiselyThemes">Purchase <span>$15</span></a></div>
+	</div>
+	
+    <div id="iframe_wrap" style="height: 509px;" class="desktop"><iframe id="iframe" src="./Wisely Themes _ Lilac Wordpress_files/lilac.html" frameborder="0" width="100%" style="height: 509px;" class="desktop"></iframe></div>
+    
+
+
+
+
+</body></html>
